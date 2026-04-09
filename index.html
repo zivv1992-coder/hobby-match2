@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HobbyMatch Israel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <style>
+    :root{--p:#7c3aed;--pd:#4c1d95;--pp:#ede9fe;--g:linear-gradient(135deg,#4c1d95,#2563eb);--f:'Heebo',sans-serif;}
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:var(--f);background:#f0edff;min-height:100vh;direction:rtl;display:flex;align-items:center;justify-content:center;padding:20px;}
+    .bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;}
+    .b1{position:absolute;width:500px;height:500px;background:#7c3aed;border-radius:50%;filter:blur(80px);opacity:.3;top:-120px;right:-140px;animation:fl 12s ease-in-out infinite;}
+    .b2{position:absolute;width:380px;height:380px;background:#2563eb;border-radius:50%;filter:blur(80px);opacity:.3;bottom:-80px;left:-100px;animation:fl 12s ease-in-out infinite 4s;}
+    @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-30px)}}
+    .card{position:relative;z-index:1;background:linear-gradient(160deg,#fff,#f5f3ff);border:1.5px solid rgba(124,58,237,.12);border-radius:24px;box-shadow:0 8px 40px rgba(37,99,235,.18);padding:48px 36px;max-width:500px;width:100%;text-align:center;animation:fu .6s ease both;}
+    @keyframes fu{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+    .logo{font-size:3rem;margin-bottom:16px;}
+    h1{font-size:2rem;font-weight:900;background:var(--g);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:10px;}
+    .sub{font-size:.95rem;color:#6b5fa0;line-height:1.7;margin-bottom:36px;}
+    .btns{display:flex;flex-direction:column;gap:14px;}
+    .btn{display:block;padding:15px 24px;border-radius:14px;font-family:var(--f);font-size:1rem;font-weight:800;text-decoration:none;transition:opacity .2s,transform .2s;box-shadow:0 4px 20px rgba(124,58,237,.25);}
+    .btn:hover{opacity:.88;transform:translateY(-2px);}
+    .btn-primary{background:var(--g);color:#fff;}
+    .btn-secondary{background:var(--pp);color:var(--pd);border:1.5px solid #ddd6fe;}
+    .divider{display:flex;align-items:center;gap:10px;margin:4px 0;}
+    .divider::before,.divider::after{content:'';flex:1;height:1px;background:#ddd6fe;}
+    .divider span{font-size:.78rem;color:#b4a9d9;font-weight:600;}
+    .features{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:28px;}
+    .feat{background:#fff;border:1.5px solid #ddd6fe;border-radius:50px;padding:6px 14px;font-size:.78rem;font-weight:700;color:var(--pd);}
+  </style>
+</head>
+<body>
+<div class="bg"><div class="b1"></div><div class="b2"></div></div>
+<div class="card">
+  <div class="logo">🤝</div>
+  <h1>HobbyMatch Israel</h1>
+  <p class="sub">מצא שותפים לתחביב בסביבתך.<br/>הצטרף לקהילה של אנשים עם תחביבים משותפים.</p>
+  <div class="btns">
+    <a href="https://ziv92.app.n8n.cloud/form/f27d6f49-8c10-4684-8dcd-4de40d6bfaee" class="btn btn-primary">
+      🚀 הרשמה לפלטפורמה
+    </a>
+    <div class="divider"><span>או</span></div>
+    <a href="profiles.html" class="btn btn-secondary">
+      👥 צפה בפרופילים
+    </a>
+  </div>
+  <div class="features">
+    <span class="feat">📍 לפי מרחק</span>
+    <span class="feat">🎯 תחביבים משותפים</span>
+    <span class="feat">💜 חיבורים אמיתיים</span>
+  </div>
+</div>
+</body>
+</html>
